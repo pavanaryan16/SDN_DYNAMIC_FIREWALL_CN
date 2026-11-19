@@ -1,0 +1,15 @@
+{
+  "allowed_tcp_ports": [8080, 5001],
+  "forbidden_tcp_ports": [21, 23, 445],
+  "restricted_hosts": [],
+  "timeouts": {
+    "allow_idle_timeout": 30,
+    "deny_idle_timeout": 30,
+    "base_block_hard_timeout": 15
+  },
+  "detection_thresholds": {
+    "window_seconds": 5.0,
+    "port_scan_distinct_ports": 6,
+    "conn_flood_max_connections": 10
+  }
+}
